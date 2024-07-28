@@ -71,11 +71,6 @@ export default function App() {
           options={() => ({
             headerShown: false,
             tabBarIcon: ({focused}) => (
-              // <MaterialIcons
-              //   name="movie-creation"
-              //   size={20}
-              //   color={focused ? 'blue' : 'grey'}
-              // />
               <Image
                 style={{
                   width: 16,
