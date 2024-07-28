@@ -8,7 +8,7 @@ import {
   ActivityIndicator,
   StyleSheet,
 } from 'react-native';
-import {getMovies} from '../services/tmdbService';
+import {getMovies} from'../services/services';
 import {useNavigation} from '@react-navigation/native';
 
 const PopularScreen = ({category}) => {

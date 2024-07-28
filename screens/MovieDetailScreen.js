@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {View, Text, Image, ScrollView, ActivityIndicator} from 'react-native';
-import {getMovieDetail} from '../services/tmdbService';
+import {getMovieDetail} from '../services/services';
 
 const MovieDetailScreen = ({route}) => {
   const {movieId} = route.params;

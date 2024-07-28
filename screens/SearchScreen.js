@@ -10,7 +10,7 @@ import {
   StyleSheet,
   ActivityIndicator
 } from 'react-native';
-import { searchMovies } from '../services/tmdbService';
+import {searchMovies} from'../services/services';
 
 const SearchScreen = ({ navigation }) => {
   const [query, setQuery] = useState('');
