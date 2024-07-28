@@ -81,6 +81,9 @@ import org.apache.tools.ant.taskdefs.condition.Os
 project.ext.react = [
     enableHermes: true,  // clean and rebuild if changing
 ]
+project.ext.vectoricons = [
+  iconFontNames: [ 'MaterialIcons.ttf', 'Ionicons.ttf' ] // add other fonts if needed
+]
 
 apply from: "../../node_modules/react-native/react.gradle"
 
@@ -218,6 +221,7 @@ android {
             keyPassword 'android'
         }
     }
+    
     buildTypes {
         debug {
             signingConfig signingConfigs.debug
@@ -301,7 +305,7 @@ task copyDownloadableDepsToLibs(type: Copy) {
     from configurations.implementation
     into 'libs'
 }
-
+apply from: "../../node_modules/react-native-vector-icons/fonts.gradle" 
 apply from: file("../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesAppBuildGradle(project)
 
 def isNewArchitectureEnabled() {
