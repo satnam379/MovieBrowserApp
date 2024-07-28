@@ -5,8 +5,12 @@ import {useNavigation} from '@react-navigation/native';
 const Search = () => {
   const navigation = useNavigation();
 
+  const navigateTosearch = ()=>{
+    navigation.navigate('Search')
+  }
+  
   return (
-    <TouchableOpacity onPress={() => navigation.navigate('Search')}>
+    <TouchableOpacity onPress={navigateTosearch}>
       <Image
         style={{
           width: 20,
