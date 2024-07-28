@@ -34,6 +34,7 @@ const PopularScreen = ({category}) => {
       setLoading(false);
     }
   };
+  
   const handleLoadMore = () => {
     if (hasMore && !loading) {
       setPage(prevPage => prevPage + 1);
