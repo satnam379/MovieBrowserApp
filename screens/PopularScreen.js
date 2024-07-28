@@ -35,7 +35,6 @@ const PopularScreen = ({category}) => {
     }
   };
   const handleLoadMore = () => {
-    console.log('inside handle load more ', hasMore, loading);
     if (hasMore && !loading) {
       setPage(prevPage => prevPage + 1);
     }
